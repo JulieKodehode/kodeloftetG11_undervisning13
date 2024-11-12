@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  width: 120px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgb(21, 73, 150);
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hiddenBox {
+  display: none;
+}
+
+.showTextBox {
+  max-width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: lightgray;
+  box-shadow: 2px 2px 5px lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxDiv {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+#toggleCont {
+  width: 200px;
+  height: 70px;
+  border-radius: 40px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+}
+
+#toggleCont:hover {
+  cursor: pointer;
+}
+
+#toggleCircle {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  background-color: yellow;
+}
+
+.move {
+  animation: moveball 600ms ease-in-out forwards;
+}
+
+.moveBack {
+  animation: moveBack 600ms ease-in-out forwards;
+}
+
+@keyframes moveball {
+  from {
+    transform: translateX(0);
+    background-color: yellow;
+  }
+  to {
+    transform: translateX(130px);
+    background-color: red;
+  }
+}
+
+@keyframes moveBack {
+  from {
+    transform: translateX(130px);
+    background-color: red;
+  }
+  to {
+    transform: translateX(0);
+    background-color: yellow;
+  }
+}
