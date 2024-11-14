@@ -59,6 +59,18 @@ function personalia(first, last) {
 
 personalia("Julie", "Hauge");
 
+// SVAR PÅ OPPGAVE 3:
+const myButton = document.querySelector("#myButton");
+console.log(myButton);
+const squareToCircle = document.querySelector("#squareToCircle");
+console.log(squareToCircle);
+
+
+myButton.addEventListener("click", function () {
+  console.log("Button is clicked!")
+  squareToCircle.classList.toggle("squareToCircle")
+})
+
 //Datatyper
 //Number, String, Boloeon
 const name = "Julie";
